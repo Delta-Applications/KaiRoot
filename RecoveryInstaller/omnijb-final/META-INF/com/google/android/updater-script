@@ -1,0 +1,22 @@
+ui_print("|------------------------|");
+ui_print("|  KaiRoot SysInstaller  |");
+ui_print("|------------------------|");
+ui_print("|  Luxferre & B-Hackers  |");
+ui_print("|------------------------|");
+
+ui_print("Unpacking resources...");
+package_extract_file("omnirun.sh", "/tmp/omnirun.sh");
+package_extract_file("busybox", "/tmp/busybox");
+package_extract_file("unzip", "/tmp/unzip");
+package_extract_file("zip", "/tmp/zip");
+package_extract_file("decl.patch", "/tmp/decl.patch");
+package_extract_dir("omnijb-distribution", "/tmp/omnisd.831337.xyz");
+ui_print("Running Installer script...");
+set_perm(0, 0, 0777, "/tmp/busybox");
+set_perm(0, 0, 0777, "/tmp/zip");
+set_perm(0, 0, 0777, "/tmp/unzip");
+run_program("/tmp/busybox", "sh", "/tmp/omnirun.sh");
+wipe_cache();
+ui_print("Smithed and jailbroken");
+
+

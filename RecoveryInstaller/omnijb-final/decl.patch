@@ -1,0 +1,14 @@
+,
+  "kairoot.bananahackers.net": {
+    "origin": "app://kairoot.bananahackers.net",
+    "installOrigin": "app://kairoot.bananahackers.net",
+    "receipt": null,
+    "installTime": 1530672640806,
+    "updateTime": 1530672640806,
+    "manifestURL": "app://kairoot.bananahackers.net/manifest.webapp",
+    "appStatus": 3,
+    "localId": 50006,
+    "removable": false,
+    "manifestHash": "67a83100d96061897150dbd884a9f9ba"
+  }
+}

@@ -1,0 +1,31 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: 7uX+gA9eGMnsK1KUWcvTLOTdewM=
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: ujGr2p8LbuFT45B5PMPd1KhKkIo=
+
+Name: zip
+SHA1-Digest: JhW2si3MU+F1Gdu95GMLmtaj394=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: 6ab14xsx9aQKjU6BfVMQrYrgpD8=
+
+Name: busybox
+SHA1-Digest: wIDrgh/im4uOO2ooz3MD8khC6vU=
+
+Name: omnijb-distribution/manifest.webapp
+SHA1-Digest: 94NdlgysEUYdBLuCyNzCqABmFDQ=
+
+Name: omnirun.sh
+SHA1-Digest: KKWb8Ip2NqcukWAb9Ur7JxtmZ2s=
+
+Name: decl.patch
+SHA1-Digest: B79la/tvaYw0eCMDVslopt0qFQY=
+
+Name: omnijb-distribution/application.zip
+SHA1-Digest: WkAlnZJ6NaauyA9RGAymJWABM88=
+
+Name: unzip
+SHA1-Digest: z93HgRfeh4HFES3l8Z74V5tM3GU=
+

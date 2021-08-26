@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Wallace Toolbox</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
+  <meta name="theme-color" content="#FF3C29"/>
+  <link rel="stylesheet" type="text/css" href="css/themes/light.css">
+  <link rel="stylesheet" type="text/css" href="css/kaios-native-ui.css">
+  <link defer rel="prefetch" type="application/l10n" href="locales/locales.ini" />
+
+</head>
+<body class="width-100 height-100">
+  <div id="header">KaiRoot</div>
+  <div id="content">
+  <div id="finder" class="flex justify-content-center align-item-center width-100 height-100">
+    <div class="panel" id="Shortcuts">
+      <div class="separator" data-l10n-id="hardwareinfo">Device Information</div>
+      <div class="item list-item focusable" tabindex="0" data-map="display-info"><p class="list-item__text" data-l10n-id="chipset">Chipset;</p><p class="list-item__subtext" id="hardware">Unknown</p>
+      </div>
+      <div class="item list-item focusable" data-map="display-info"><p class="list-item__text" data-l10n-id="brand">Brand</p><p class="list-item__subtext" id="brand">Unknown</p>
+      </div>
+      <div class="item list-item focusable" data-map="display-info"><p class="list-item__text" data-l10n-id="model">Model</p><p class="list-item__subtext" id="model">Unknown</p>
+      </div>
+      <div class="item list-item focusable" data-map="display-info"><p class="list-item__text" data-l10n-id="osver">OS Version</p><p class="list-item__subtext" id="osver">Unknown</p>
+      </div>
+      <div class="item list-item focusable" data-map="display-info"><p class="list-item__text" data-l10n-id="build-date">Build Date</p><p class="list-item__subtext" id="bdate">Unknown</p>
+      </div>
+      <div class="separator">Developer</div>
+      <div class="item list-item focusable" data-map="adbroot">
+        <p class="list-item__text" data-l10n-id="adbroot">ADB Root</p>
+        <p class="list-item__subtext" id="adbroot-text">Disabled</p>
+      </div>
+      <div class="item list-item focusable" data-map="devmenu">
+        <p class="list-item__text" data-l10n-id="devmenu">Developer Menu</p>
+      </div>
+      
+      <div class="item list-item focusable" data-map="diagport">
+        <p class="list-item__text" data-l10n-id="diagport">Diagnostics Port</p>
+        <p class="list-item__subtext" id="diagport-text">Disabled</p>
+      </div>
+      <div class="item list-item focusable" data-map="busyboxt">
+        <p class="list-item__text" data-l10n-id="bbtelnet">Busybox Telnet Server</p>
+        <p class="list-item__subtext" id="busyboxt-text">Offline</p>
+      </div>
+      <div class="button-container">
+      <button data-map="overclock" data-l10n-id="overclock" class="item button-container__button focusable">Overclock</button>
+      <button data-map="sideload" data-l10n-id="sideload_pkg" class="item button-container__button focusable">Sideload Package</button>
+      <button data-map="export" data-l10n-id="export_pkg" class="item button-container__button focusable">Export Package</button>
+      </div>
+      <div class="separator" data-l10n-id="tweaks">Tweaks</div>
+      <div class="item list-item focusable" data-map="increasebuffer">
+        <p class="list-item__text">Buffersize Tweak</p>
+        <p class="list-item__subtext" id="buffer-text">Increase Internet speed!</p>
+      </div>
+      <div class="item list-item focusable" data-map="multisim">
+        <p class="list-item__text" id="multisim-title">Disable SIM 2</p>
+      </div>
+      <div class="item list-item focusable" data-map="removable-bloatware">
+        <p class="list-item__text">Removable Pre-Installed Apps</p>
+        <!-- <p class="list-item__subtext" id="bloatware-text">🐞</p> !-->
+      </div>
+      <div class="item list-item focusable" data-map="callrecord">
+        <p class="list-item__text">Call Recording</p>
+        <p class="list-item__subtext" id="call-rec-text">Disabled</p>
+      </div>
+      <div class="separator">Risky</div>
+
+      <div class="separator">Credits</div>
+<div class="item list-item focusable" data-map="display-info"><p class="list-item__text">Luxferre/Suborg/Nihilist</p><p class="list-item__subtext">libwallace 0.6 & OmniSD</p></div>
+<div class="item list-item focusable" data-map="display-info"><p class="list-item__text">Affe Null</p><p class="list-item__subtext">Busybox Expert</p></div>
+<div class="item list-item focusable" data-map="display-info"><p class="list-item__text">speeduploop</p><p class="list-item__subtext">Telnetd & ADBRoot Method</p></div>
+<div class="item list-item focusable" data-map="display-info"><p class="list-item__text">Lcsunm & LiarOnce</p><p class="list-item__subtext">ALLA App Manager</p></div>
+
+<div class="item list-item focusable" data-map="display-info"><p class="list-item__text">canicjusz</p><p class="list-item__subtext">KaiUI</p></div>
+<div class="item list-item focusable" data-map="display-info"><p class="list-item__text">Cyan2048</p><p class="list-item__subtext">Endless Emotional Support</p></div>
+<div class="item list-item focusable" data-map="display-info"><p class="list-item__text">strukturart</p><p class="list-item__subtext">God-like Knowledge</p></div>
+<div class="item list-item focusable bhackers"><p class="list-item__text">bhackers Community</p><p class="list-item__subtext"><3</p></div>
+</div>
+
+
+  </div>
+</div>
+</body>
+<script src="js/libwallace.js"></script>
+<script src="js/kaios-toaster.js"></script>
+<script src="js/kaios-native-ui.js"></script>
+<script type="text/javascript" src="js/libs/l10n.js"></script>
+<script src="js/KaiRoot.js"></script>
+<script src="js/app.js"></script>

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root  {
+  --accent-color: #FF3C29;
+}
+
+html, body {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  margin: 0;
+  padding: 0 5px;
+}
+
+body, textarea {
+  font-size: 1rem;
+  font-family: "Open Sans", OpenSans, sans-serif;
+  background: #fff;
+}
+
+textarea {
+  font-family: "Noto Sans", NotoSans, "Open Sans", OpenSans, sans-serif;
+  border: none;
+  border-radius: none!important;
+  outline: none;
+  padding: 3px 2px;
+}
+
+textarea.monospace {
+  font-family: monospace;
+}
+
+p {
+  font-size: inherit;
+}
+
+#title, #title h1 {
+  display: block;
+  position:fixed; top:0; left: 0; width: 100%; height: 28px;
+  text-align: center;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 300;
+  background: var(--accent-color);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+#text, #filepicker, #help {
+  position: fixed; top:28px; left: 0; width: 100%; height: calc(100% - 58px);
+}
+
+#text textarea {
+  position: relative; width: 100%; height: 100%;
+}
+
+#text.alt-theme, textarea.alt-theme {
+  background: #111;
+  color: #eee;
+}
+
+#softkeys {
+  position: fixed; bottom: 0; left: 0; width: 100%; height: 30px;
+  background: #dadada;
+  padding: 3px 5px;
+}
+
+#softkeys > * {
+  display: inline-block;
+  width: 72px;
+  padding: 0 5px;
+}
+
+#softkey-left, #softkey-right {
+  font-weight: 400;
+  font-size: 14px;
+  color: #323232;
+}
+
+#softkey-right {
+  text-align: right;
+}
+
+#softkey-center {
+  font-weight: 600;
+  font-size: 16px;
+  width: 76px;
+  color: #323232;
+  text-align: center;
+}
+
+#filepicker {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.picker-file {
+  display: block;
+  background: #eee;
+  color: #111;
+  position: relative;
+  width: 100%;
+  height: 3em;
+  padding: 0 5px;
+}
+
+.picker-file.active {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+#help p {
+  padding-bottom: 1em;
+}

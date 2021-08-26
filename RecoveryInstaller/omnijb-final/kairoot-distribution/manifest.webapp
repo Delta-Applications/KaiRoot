@@ -1,0 +1,67 @@
+{
+  "version": "0.0.6",
+  "name": "KaiRoot",
+  "description": "All-in-one KaiOS Toolbox",
+  "launch_path": "/index.html",
+  "type": "certified",
+  "icons": {
+    "56": "/img/icon-56.png",
+    "112": "/img/icon-112.png"
+  },
+  "developer": {
+    "name": "bananahackers"
+  },
+  "activities": {
+     "KaiRoot.SelectPkg": {
+			"href": "./explorer.html",
+			"disposition": "inline",
+			"returnValue": true
+		},
+    "KaiRoot.ExportPkg": {
+			"href": "./alla.html",
+			"disposition": "inline",
+			"returnValue": true
+		}
+  },
+  "origin": "app://kairoot.bananahackers.net",
+  "fullscreen": false,
+  "permissions": {
+    "wifi-manage": {},
+    "device-storage:sdcard" : {
+      "description": "Required for accessing app manifest files",
+      "access": "readonly"
+    },
+    "device-storage:sdcard1" : {
+      "description": "Required for accessing app manifest files",
+      "access": "readonly"
+    },
+    "engmode-extension": {
+      "description": "Handle KaiOS 2.5.1+ devices"
+    },
+    "external-api": {
+      "description": "Handle KaiOS 2.5.1+ devices"
+    },
+    "kaiosextension": {
+      "description": "Handle KaiOS 2.5 devices"
+    },
+    "jrdextension": {
+      "description": "Handle KaiOS 1.0 devices by TCL"
+    },
+    "power": {
+      "description": "Enable priviliged factory reset capability"
+    },
+    "settings": {
+      "access": "readwrite",
+      "description": "Enable hidden settings modification"
+    },
+    "device-storage:apps": {
+      "access": "readwrite",
+      "description": "Support package installation"
+    },
+    "webapps-manage": {
+      "description": "Support package installation"
+    }
+  },
+  "theme_color": "var(--accent-color)",
+  "cursor": "false"
+}
