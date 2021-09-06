@@ -6,6 +6,12 @@ KaiRoot is a modification/fork of the existing Wallace Toolbox, with bugfixes su
 
 Based on [LibWallace](https://gist.github.com/plugnburn/00fa61006513cdb0a12adf61a6e425e1), Wallace Toolbox, and several independent researches.
 
+## To-do
+- Implement Risky Category
+- Change color choice to idk
+- Improve UI to open different menus 
+
+
 ## Current version
 
 0.0.6
