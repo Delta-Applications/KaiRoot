@@ -10,7 +10,7 @@ Based on [LibWallace](https://gist.github.com/plugnburn/00fa61006513cdb0a12adf61
 - Implement Risky Category
 - Change color choice to idk
 - Improve UI to open different menus 
-
+- Show Factory Reset Image when performing reset
 
 ## Current version
 
