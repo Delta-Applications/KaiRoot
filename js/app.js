@@ -115,6 +115,7 @@ try {
     }
 
 
+    
     if (move == "+1") {
       if (tabIndex < items_list.length - 1) {
         tabIndex++;
@@ -136,6 +137,17 @@ try {
         });
       }
     }
+
+   /* const rect = document.activeElement.getBoundingClientRect();
+    const elY =
+    rect.top - document.body.getBoundingClientRect().top + rect.height / 2;
+
+    document.activeElement.parentNode.scrollBy({
+      left: 0,
+      top: elY - window.innerHeight / 2,
+      behavior: "smooth",
+    }); */ // I can't get this to work, please someone open a PR if you somehow get this working, thanks! ;)
+
 }
 
 
@@ -182,7 +194,7 @@ function shortpress_action(param) {
 ////////////////////////////////
 
 function handleKeyDown(evt) {
-  if (evt.key == "EndCall") evt.preventDefault();
+  //if (evt.key == "EndCall") evt.preventDefault();
   if (evt.key == "Backspace" && !$("input").is(":focus"))
     evt.preventDefault();
   if (!evt.repeat) {
