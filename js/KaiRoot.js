@@ -548,7 +548,7 @@ window.addEventListener('DOMContentLoaded', function () {
           break;
         default:
           alert("Invalid Choice! Valid Choices: (a,b,c)")
-        break;
+          break;
       }
 
     };
@@ -575,7 +575,7 @@ window.addEventListener('DOMContentLoaded', function () {
         }, function (e) {
           window.alert('Error: ' + e)
         })
-      }else{
+      } else {
         alert("SystemSetting is invalid/unavailable!")
       }
 
@@ -597,6 +597,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
       }
     };
+
+    function developerSELinuxSpoof() {
+      // Spoof SELinux 'echo -n 1 > /data/enforce && mount -o bind /data/enforce /sys/fs/selinux/enforce'
+      Wallace.runCmd('echo -n 1 > /data/enforce && mount -o bind /data/enforce /sys/fs/selinux/enforce', function () {
+       alert("Spoofed /sys/fs/selinux/enforce to 1")
+      }, function () {
+        window.alert(translate("err_message") + this.error.name+", This works only on devices with a modified boot part with SELinux disabled")
+      })
+    }
 
     function internalSideload(blob, callback) {
       console.log(blob)
@@ -628,6 +637,7 @@ window.addEventListener('DOMContentLoaded', function () {
         InstallBusyBox: developerInstallBusybox,
         BusyboxTelnet: developerBusyboxTelnet,
         Textbox: developerTestbox,
+        SELinux: developerSELinuxSpoof,
       },
       Utility: {
         IncreaseBufferSize: utilityIncreaseBufferSize,
