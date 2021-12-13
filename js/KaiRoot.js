@@ -597,13 +597,14 @@ window.addEventListener('DOMContentLoaded', function () {
 
       }
     };
-
+    
     function developerSELinuxSpoof() {
       // Spoof SELinux 'echo -n 1 > /data/enforce && mount -o bind /data/enforce /sys/fs/selinux/enforce'
+      // Make Whatsapp think that SELinux is enabled so it will not disable calling and other features in jailbroken devices
       Wallace.runCmd('echo -n 1 > /data/enforce && mount -o bind /data/enforce /sys/fs/selinux/enforce', function () {
        alert("Spoofed /sys/fs/selinux/enforce to 1")
       }, function () {
-        window.alert(translate("err_message") + this.error.name+", This works only on devices with a modified boot part with SELinux disabled")
+        window.alert(translate("err_message") + this.error.name+", This works only on devices with a modified boot partition with SELinux disabled")
       })
     }
 
@@ -636,7 +637,7 @@ window.addEventListener('DOMContentLoaded', function () {
         Sideload: developerSideload,
         InstallBusyBox: developerInstallBusybox,
         BusyboxTelnet: developerBusyboxTelnet,
-        Textbox: developerTestbox,
+        Testbox: developerTestbox,
         SELinux: developerSELinuxSpoof,
       },
       Utility: {
